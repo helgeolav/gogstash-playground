@@ -29,7 +29,7 @@ func DefaultFilterConfig() FilterConfig {
 				Type: ModuleName,
 			},
 		},
-		Field: "filename",
+		Field: "file_name",
 	}
 }
 
@@ -50,10 +50,12 @@ func (f *FilterConfig) Event(ctx context.Context, event logevent.LogEvent) (loge
 	if filename, ok := fn.(string); ok {
 		err := os.Remove(filename)
 		if err != nil {
-			goglog.Logger.Errorf("deletefile: %s", err.Error())
+			goglog.Logger.Errorf("%s: %s", ModuleName, err.Error())
 			return event, false
 		}
+		goglog.Logger.Debugf("%s: deleted %s", ModuleName, filename)
 		return event, true
 	}
+	goglog.Logger.Debugf("%s: no file deleted (missing name)", ModuleName)
 	return event, false
 }
