@@ -41,7 +41,7 @@ type FilterConfig struct {
 	Headers           string          `json:"headers" yaml:"headers"`                       // field name of extra headers to send in request, must be map[string]string
 	Auth              string          `json:"auth" yaml:"auth"`                             // field name of specific authentication to use in client
 	Size              string          `json:"size" yaml:"size"`                             // field to store the file size in
-	FileName          string          `json:"fileName" yaml:"file_name"`                    // field to store name of output file
+	FileName          string          `json:"file_name" yaml:"file_name"`                   // field to store name of output file
 	Response          string          `json:"response" yaml:"response"`                     // field to save response headers to
 	DownloadDir       string          `json:"download_dir" yaml:"download_dir"`             // folder to download file to
 	Authenticators    []Authenticator `json:"authenticators" yaml:"authenticators"`         // a list of preconfigured authenticators
