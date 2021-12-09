@@ -25,7 +25,7 @@ type Codec struct {
 }
 
 // InitHandler initialize the codec plugin
-func InitHandler(_ context.Context, raw *config.ConfigRaw) (config.TypeCodecConfig, error) {
+func InitHandler(_ context.Context, raw config.ConfigRaw) (config.TypeCodecConfig, error) {
 	c := &Codec{
 		CodecConfig: config.CodecConfig{
 			CommonConfig: config.CommonConfig{
@@ -33,10 +33,10 @@ func InitHandler(_ context.Context, raw *config.ConfigRaw) (config.TypeCodecConf
 			},
 		},
 	}
-	if res, ok := (*raw)["try_cast"].(bool); ok {
+	if res, ok := (raw)["try_cast"].(bool); ok {
 		c.TryCast = res
 	}
-	if res, ok := (*raw)["root_tag"].(string); ok {
+	if res, ok := (raw)["root_tag"].(string); ok {
 		c.RootTag = res
 	}
 	return c, nil
