@@ -9,6 +9,7 @@ require (
 )
 
 require (
+	bitbucket.org/HelgeOlav/geoiplookup v0.0.0-20211217122921-054a1a908c1b // indirect
 	bitbucket.org/HelgeOlav/utils v0.0.0-20211209222926-7771de6afdcd // indirect
 	cloud.google.com/go v0.99.0 // indirect
 	cloud.google.com/go/storage v1.18.2 // indirect

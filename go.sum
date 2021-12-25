@@ -1,4 +1,6 @@
 bazil.org/fuse v0.0.0-20160811212531-371fbbdaa898/go.mod h1:Xbm+BRKSBEpa4q4hTSxohYNQpsxXPbPry4JJWOB3LB8=
+bitbucket.org/HelgeOlav/geoiplookup v0.0.0-20211217122921-054a1a908c1b h1:2MxIfkyEiMj+NXT6XOrddg5BsYJ7jlheQuclAFxVUtk=
+bitbucket.org/HelgeOlav/geoiplookup v0.0.0-20211217122921-054a1a908c1b/go.mod h1:iA4EIVt7TDu/FUWfQ4oaoyrcQDDBws3VhBk9DgI8Rxo=
 bitbucket.org/HelgeOlav/utils v0.0.0-20211209011010-71743d09240c h1:dFk8oW5Q2KqfnBO9vWbX8Z7silZ6TmBAhr0btri1Kbs=
 bitbucket.org/HelgeOlav/utils v0.0.0-20211209011010-71743d09240c/go.mod h1:2egq96naV1YT5QD/flVOutUxU3KPNzAW075qz8ECSeg=
 bitbucket.org/HelgeOlav/utils v0.0.0-20211209222926-7771de6afdcd h1:msjJPiun3mzvKOi/c6SjvJSXOWVucvZe9KNIokfDTTU=
